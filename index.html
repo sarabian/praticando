@@ -2,13 +2,30 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>praticandogithtmlpythonpostgresql</title>
-    <style>body{background-color: black;color: aliceblue;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif 20 pt ;}</style>
+    <title>Números com JS</title>
+    <style>
+        body { font: 12pt Arial; }
+        button { font-size: 12pt; padding: 30px; }
+    </style>
 </head>
 <body>
-    <p><h1>Aprendendo a versionar codigos utilizando os meios possiveis em um sistema windows 7 com configuracoes limitadas</h1><h2>fazendo interacoes entre tecnologias compativeis e extensoes de forma totalmente autodidatica</h2></p>
-    <script></script>
+    <h1>Somando dois números</h1>
+    <button onclick="somar()">Iniciar a soma</button>
+    <section id="res">
+        <p>O resultado vem aqui...</p>
+    </section>
+
+    <script>
+    
+        function somar() {
+            let n1 = Number(window.prompt('Digite um número: '))
+            let n2 = Number(window.prompt('Digite outro número:'))
+            soma = n1 + n2
+
+            let res = document.querySelector('section#res')
+            res.innerHTML = `<p>A soma entre <mark>${n1}</mark> e <mark>${n2}</mark> é igual a <strong>${soma}</strong>!</p>`
+        }
+    </script>
 </body>
 </html>
