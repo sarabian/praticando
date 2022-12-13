@@ -1,2 +1,2 @@
 # praticando
-testando interacao direta com vscode 
+PRATICANDO INFRAMES COM SITE HOSPEDADO NO GIT
